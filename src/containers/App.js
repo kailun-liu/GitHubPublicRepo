@@ -83,6 +83,7 @@ const InfiniteScroll = () => {
                 {
                 postList.list.map((post, index) => {
                     return (<div key={index} className="post divStyle grow" >
+                              <img  src={`https://robohash.org/${index}`} />
                               <div>
                               <p className="w-50 pa2 mr2">ID:</p>
                               <h2 className="w-50 pa2 mr2"> {post.id} </h2>
@@ -103,7 +104,7 @@ const InfiniteScroll = () => {
                                 <p className="w-50 pa2 mr2">GitHub URL:</p>
                                 <a href={post.html_url} className="w-50 pa2 mr2"> {post.html_url} </a>
                               </div>
-                              <img src={`https://robohash.org/${index}`}/>
+                              
                           </div>
                         )
                 })                 
