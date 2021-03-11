@@ -3,7 +3,7 @@ import './App.css';
 import 'tachyons';
 
 let pageNum = 1;
-let limit = 3;
+let limit = 4;
 let url = `https://api.github.com/users/kailun-liu/repos?per_page=${limit}&page=${pageNum}`;
 
 
@@ -82,7 +82,7 @@ const InfiniteScroll = () => {
                 <div className="post-list">
                 {
                 postList.list.map((post, index) => {
-                    return (<div key={index} className="post divStyle grow" >
+                    return (<div key={index} className="post divStyle grow vh-25" >
                         <div className="flex">
                         <p className="w-20 pa2 mr2">ID:</p>
                         <h2 className="w-80 pa2 mr2"> {post.id} </h2>
