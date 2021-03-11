@@ -44,13 +44,9 @@ h1 {
     width: 100%;
 };
 
-.inlinebox {
-    max-width: 798px;
-    margin: 2em auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* loading */

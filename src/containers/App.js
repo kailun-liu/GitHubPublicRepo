@@ -82,24 +82,24 @@ const InfiniteScroll = () => {
                 <div className="post-list">
                 {
                 postList.list.map((post, index) => {
-                    return (<div key={index} className="post divStyle grow vh-25" >
-                        <div className="flex">
+                    return (<div key={index} className="post divStyle grow" >
+                        <div className="flex flex-wrap">
                         <p className="w-20 pa2 mr2">ID:</p>
                         <h2 className="w-80 pa2 mr2"> {post.id} </h2>
                         </div>
-                        <div className="flex">
+                        <div className="flex flex-wrap">
                           <p className="w-20 pa2 mr2">Name:</p>
                           <h2 className="w-80 pa2 mr2"> {post.name} </h2>
                         </div>
-                        <div className="flex">
+                        <div className="flex flex-wrap">
                           <p className="w-20 pa2 mr2">Description:</p>
                           <h2 className="w-80 pa2 mr2"> {post.description} </h2>
                         </div>
-                        <div className="flex">
+                        <div className="flex flex-wrap">
                           <p className="w-20 pa2 mr2">Homepage:</p>
                           <a href={post.homepage} className="w-80 pa2 mr2"> {post.homepage} </a>
                         </div>
-                        <div className="flex">
+                        <div className="flex flex-wrap">
                           <p className="w-20 pa2 mr2">GitHub URL:</p>
                           <a href={post.html_url} className="w-80 pa2 mr2"> {post.html_url} </a>
                         </div>
